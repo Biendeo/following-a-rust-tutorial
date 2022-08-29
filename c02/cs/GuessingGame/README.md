@@ -1,0 +1,1 @@
+This project made me more aware about the `ImplicitUsings` setting in the project, which is enabled by default when `dotnet new console` is used. I found more information about it from here: https://docs.microsoft.com/en-gb/dotnet/core/project-sdk/overview#implicit-using-directives. It seems very useful for these quick scripts though.
