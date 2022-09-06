@@ -1,0 +1,1 @@
+This project is a quick dive into variables, types, functions, and control flows.

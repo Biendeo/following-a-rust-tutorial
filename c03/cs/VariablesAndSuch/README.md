@@ -1,0 +1,1 @@
+This project is mostly just me comparing with the Rust equivalents.
