@@ -1,0 +1,1 @@
+This project is an exploration of ownership and slices.
