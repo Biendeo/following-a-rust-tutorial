@@ -51,15 +51,15 @@ int main(int argc, char* argv[]) {
 
 	{
 		// Note how the constructor gets called.
-		ownership_example x{"Example 1"};
+		ownership_example x("Example 1");
 		// And the deconstructor now gets called.
 	}
 
 	{
-		ownership_example x{"Example 2"};
+		ownership_example x("Example 2");
 		ownership_example& r = x;
 		{
-			ownership_example x2{"Example 2 in the scope"};
+			ownership_example x2("Example 2 in the scope");
 			r = x2; // Note this is doing a copy assignment and not a reference assignment!
 		}
 		std::cout << "Still have a reference to r: " << r.s << std::endl;
@@ -69,12 +69,12 @@ int main(int argc, char* argv[]) {
 	{
 		ownership_example* p;
 		{
-			ownership_example x{"Example 3"};
+			ownership_example x("Example 3");
 			p = &x;
 		}
 		std::cout << "Is p valid here: " << p->s << std::endl; // This...might be compiler-specific.
 
-		p = new ownership_example{"Exmaple 4"};
+		p = new ownership_example("Exmaple 4");
 		
 		std::cout << "p is definitely valid: " << p->s << std::endl;
 
