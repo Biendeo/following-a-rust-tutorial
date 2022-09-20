@@ -1,0 +1,1 @@
+This project is a comparison of structs (and records...and classes) in C# (compared to the Rust project).
