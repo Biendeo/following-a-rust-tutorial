@@ -1,0 +1,5 @@
+Hello! I'm a text file!
+You may think that you're looking for searchstring.
+But you won't find it.
+Nope!
+Never will you find searchstring in this file!
